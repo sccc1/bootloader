@@ -26,4 +26,4 @@ halt:
 stage1Welcome: db "Stage 1 complete!",13,0
 
 times 510 - ($-$$) db 0x00  ;           pad remaining bytes with 0
-dw 0xAA55                   ;           Magic bootloader number - Byte 511 and 512 are expected to contain AA and 55
+dw 0xAA55                   ;           Magic bootloader number - Byte 511 and 512 are expected to contain 55 and AA
