@@ -1,7 +1,3 @@
-/*
-*	Target is to start off with nasm compatible syntax (also known as Intel syntax)
-*
-*/
 bits 16                     ;           16-bit Real Mode
 org 0x7c00                  ;           offset 0x7c00 is where BIOS will load us. inform NASM accordingly
 
@@ -23,6 +19,7 @@ boot:
     lodsb                   ;           Load 1 byte from SI into AL
     or al, al               ;           check if AL is 0
     jz halt                 ;           Halt if AL is 0
+    mov cx, 0xabcd          ;
     int 0x10                ;           BIOS interrupt 10h provides video services. See https://en.wikipedia.org/wiki/INT_10H. This combined with AH and AL will display welcome text on tty screen
     jmp .startLoop
 
