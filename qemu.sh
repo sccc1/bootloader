@@ -1,1 +1,1 @@
-qemu-system-i386 prebuilt/bootsector.bin 
+qemu-system-i386 -drive format=raw,file=prebuilt/bootsector.bin 
