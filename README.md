@@ -8,4 +8,4 @@ To build, call `make` in project root directory
 To run, use
 
     $ make all
-    $ qemu-system-i386 build/bootsector.bin`
+    $ ./qemu.sh 
