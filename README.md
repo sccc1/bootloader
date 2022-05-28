@@ -8,4 +8,4 @@ To build, call `make` in project root directory
 To run, use
 
     $ make all
-    $ ./qemu.sh 
+    $ ./qemu.sh
